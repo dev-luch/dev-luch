@@ -14,9 +14,7 @@ I'm a self-taught developer passionate about solving real-world problems through
 
 ## 📈 GitHub Stats
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Lucas-Christian&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-</div>
+![Metrics](https://github.com/dev-luch/dev-luch/blob/main/github-metrics.svg)
 
 ---
 
