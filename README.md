@@ -12,12 +12,6 @@ I'm a self-taught developer passionate about solving real-world problems through
 
 ---
 
-## 📈 GitHub Stats
-
-![Metrics](https://github.com/dev-luch/dev-luch/blob/main/github-metrics.svg)
-
----
-
 ## 🔗 Links
 
 * 📧 [lucas.christian.programmer@gmail.com](mailto:lucas.christian.programmer@gmail.com)
