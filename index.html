@@ -1,573 +1,1190 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title id="meta-title">Currículo - Lucas Christian</title>
-  <meta id="meta-description" name="description" content="Currículo interativo e responsivo de Lucas Christian, Desenvolvedor Frontend com experiência em React, TypeScript, Node.js e mais.">
-  <meta name="keywords" content="currículo, frontend, desenvolvedor, react, typescript, lucas christian, programador, web developer, portfolio">
+  <!--
+    CURRÍCULO DE LUCAS CHRISTIAN
+
+    Antes de publicar:
+    1. Procure por [MÊS/ANO DE INÍCIO] e informe a data de entrada na Soublox.
+    2. Revise o nível de inglês caso queira usar outra classificação.
+    3. Confirme se todas as tecnologias listadas em Competências refletem sua experiência atual.
+  -->
+
+  <title id="meta-title">Lucas Christian • Software Developer</title>
+  <meta
+    id="meta-description"
+    name="description"
+    content="Currículo de Lucas Christian, Software Developer com experiência em backend, APIs, integrações, frontend, infraestrutura e entrega de produtos digitais."
+  >
+  <meta
+    name="keywords"
+    content="software developer, desenvolvedor de software, backend, APIs, frontend, TypeScript, Node.js, React, Svelte, Lucas Christian, Dev Luch"
+  >
   <meta name="author" content="Lucas Christian Freitas de Oliveira">
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cv.dev-luch.com">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta id="og-title" property="og:title" content="Currículo - Lucas Christian">
-  <meta id="og-description" property="og:description" content="Currículo interativo de Lucas Christian, Desenvolvedor Frontend com foco em performance e acessibilidade.">
+  <meta property="og:type" content="profile">
+  <meta id="og-title" property="og:title" content="Lucas Christian • Software Developer">
+  <meta
+    id="og-description"
+    property="og:description"
+    content="Desenvolvedor de Software com experiência no desenvolvimento e na entrega de produtos digitais completos."
+  >
   <meta property="og:image" content="https://raw.githubusercontent.com/dev-luch/dev-luch/refs/heads/main/luch.webp">
-  <meta property="og:url" content="https://raw.githubusercontent.com/dev-luch/dev-luch/refs/heads/main/luch.webp">
+  <meta property="og:url" content="https://cv.dev-luch.com">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="profile:first_name" content="Lucas">
+  <meta property="profile:last_name" content="Christian">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta id="twitter-title" name="twitter:title" content="Currículo - Lucas Christian">
-  <meta id="twitter-description" name="twitter:description" content="Currículo interativo de Lucas Christian, Desenvolvedor Frontend com foco em performance e acessibilidade.">
+  <meta id="twitter-title" name="twitter:title" content="Lucas Christian • Software Developer">
+  <meta
+    id="twitter-description"
+    name="twitter:description"
+    content="Desenvolvedor de Software com experiência no desenvolvimento e na entrega de produtos digitais completos."
+  >
   <meta name="twitter:image" content="https://raw.githubusercontent.com/dev-luch/dev-luch/refs/heads/main/luch.webp">
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <!-- Fontes e bibliotecas -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lucas Christian Freitas de Oliveira",
+    "alternateName": "Dev Luch",
+    "url": "https://dev-luch.com",
+    "jobTitle": "Software Developer",
+    "email": "mailto:lucas.christian.programmer@gmail.com",
+    "sameAs": [
+      "https://github.com/dev-luch",
+      "https://www.linkedin.com/in/dev-luch"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Fatec Cotia"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Soublox"
+    }
+  }
+  </script>
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@400;500;600&display=swap');
+    :root {
+      color-scheme: light;
+      --page: #ffffff;
+      --canvas: #edf2f7;
+      --text: #172033;
+      --muted: #5d687a;
+      --subtle: #8390a3;
+      --line: #dce4ee;
+      --soft: #f5f8fb;
+      --accent: #0b63ce;
+      --accent-dark: #084d9f;
+      --accent-soft: #eaf3ff;
+      --shadow: 0 18px 50px rgba(20, 41, 74, 0.12);
+      --radius: 18px;
+      --max-width: 940px;
+    }
 
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #fff;
-      color: #111;
-      font-size: 0.9rem;
-      padding: 0;
       margin: 0;
-      overflow-x: hidden;
+      background: var(--canvas);
+      color: var(--text);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      font-size: 15px;
+      line-height: 1.58;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
     }
 
-    header,
-    section {
-      margin-bottom: 1rem;
-      border-left: 3px solid #0077cc;
-      padding-left: 0.75rem;
+    a {
+      color: inherit;
     }
-    
-    section {
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
       display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    
-    h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.6rem;
-      color: #005aab;
-      margin-bottom: 0.3rem;
+      justify-content: center;
+      padding: 14px 18px;
+      background: rgba(237, 242, 247, 0.88);
+      border-bottom: 1px solid rgba(220, 228, 238, 0.9);
+      backdrop-filter: blur(16px);
     }
 
-    h2 {
-      font-family: 'Orbitron', sans-serif;
-      color: #0077cc;
-      font-size: 1.1rem;
-      margin-bottom: 0.3rem;
+    .toolbar__inner {
+      width: min(var(--max-width), 100%);
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
     }
 
-    p,
-    li {
-      font-size: 0.85rem;
-      line-height: 1.4rem;
-      text-align: justify;
+    .control {
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--page);
+      color: var(--text);
+      padding: 0 14px;
+      cursor: pointer;
+      transition:
+        border-color 160ms ease,
+        color 160ms ease,
+        transform 160ms ease,
+        box-shadow 160ms ease;
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
+    .control:hover {
+      border-color: var(--accent);
+      color: var(--accent-dark);
+      box-shadow: 0 7px 18px rgba(11, 99, 206, 0.1);
+      transform: translateY(-1px);
     }
 
-    .contact-grid {
+    .control:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(11, 99, 206, 0.22);
+      outline-offset: 3px;
+    }
+
+    .control--primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .control--primary:hover {
+      background: var(--accent-dark);
+      color: #fff;
+    }
+
+    .page-shell {
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: 30px auto 54px;
+    }
+
+    .resume {
+      background: var(--page);
+      border: 1px solid rgba(220, 228, 238, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .resume__accent {
+      height: 7px;
+      background: linear-gradient(90deg, var(--accent), #31a2ff);
+    }
+
+    .resume__content {
+      padding: 48px 54px 52px;
+    }
+
+    .identity {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.4rem;
-      margin-top: 0.4rem;
+      grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.65fr);
+      gap: 34px;
+      align-items: start;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--line);
     }
 
-    .contact-card {
-      background-color: #f0f4fa;
-      padding: 0.5rem 0.75rem;
-      border-radius: 6px;
+    .identity__eyebrow {
+      margin: 0 0 5px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: #101828;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.048em;
+    }
+
+    .identity__title {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 1.15rem;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 8px;
+      margin: 2px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .contact-list li {
+      min-width: 0;
+      color: var(--muted);
+      font-size: 0.91rem;
+    }
+
+    .contact-list strong {
+      display: inline-block;
+      min-width: 70px;
+      color: var(--text);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .contact-list a {
+      color: var(--muted);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-list a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .section {
+      padding-top: 30px;
+    }
+
+    .section + .section {
+      margin-top: 2px;
+    }
+
+    .section__heading {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 12px;
+      margin: 0 0 18px;
+      color: #101828;
+      font-size: 0.92rem;
+      font-weight: 850;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
     }
 
-    .contact-card i {
-      color: #0077cc;
+    .section__heading::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .summary {
+      max-width: 820px;
+      margin: 0;
+      color: #303b4e;
       font-size: 1rem;
-      width: 20px;
+      line-height: 1.72;
     }
 
-    .contact-card span {
-      color: #0077cc;
-      word-break: break-word;
-      font-size: 0.75rem;
-    }
-
-    .contact-card a {
-      text-decoration: none;
-      color: #0077cc;
-      word-break: break-word;
-      font-size: 0.75rem;
-    }
-
-    .skills {
+    .timeline {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.4rem;
+      gap: 24px;
     }
 
-    .skill-item {
-      background-color: #f0f4fa;
-      padding: 0.4rem;
-      border-radius: 6px;
+    .entry {
+      position: relative;
+      padding-left: 20px;
+      border-left: 2px solid var(--line);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .entry::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -6px;
+      width: 10px;
+      height: 10px;
+      border: 2px solid var(--page);
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 1px var(--accent);
+    }
+
+    .entry__top {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      gap: 22px;
+      align-items: baseline;
     }
 
-    .rank {
-      background-color: #0077cc;
-      color: #fff;
-      padding: 0.15rem 0.5rem;
-      border-radius: 1rem;
-      font-weight: bold;
-      font-size: 0.75rem;
-      font-family: 'Orbitron', sans-serif;
+    .entry__role {
+      margin: 0;
+      color: #172033;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: -0.018em;
     }
 
-    .rank-a {
-      background-color: #007bff;
-    }
-    .rank-s {
-      background-color: #0044cc;
+    .entry__company {
+      color: var(--accent);
     }
 
-    .cv-options {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      z-index: 999;
-      display: flex;
-      gap: 16px;
-      align-items: center;
+    .entry__date {
+      flex: 0 0 auto;
+      color: var(--subtle);
+      font-size: 0.84rem;
+      font-weight: 700;
+      white-space: nowrap;
     }
 
-    .button-root {
-      color: #0077cc;
-      border: 1px solid #0077cc;
-      background-color: #FFFFFF;
-      padding: 0.3rem 0.8rem;
-      border-radius: 5px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 4px;
+    .entry__context {
+      margin: 3px 0 11px;
+      color: var(--muted);
+      font-size: 0.91rem;
     }
 
-    .button-root:hover {
-      opacity: 0.7;
+    .entry__description {
+      margin: 0 0 10px;
+      color: #364153;
     }
 
-    .download-button {
-      font-family: 'Orbitron', sans-serif;
-      border: none;
-      background-color: #FFFFFF;
-      color: #0077cc;
-      cursor: pointer;
+    .entry ul {
+      margin: 0;
+      padding-left: 19px;
+      color: #364153;
     }
 
-    /* Dropdown de Idioma */
-    .lang-dropdown button {
-      font-family: 'Orbitron', sans-serif;
-      background-color: #FFFFFF;
+    .entry li {
+      margin: 6px 0;
+      padding-left: 3px;
     }
 
-    .lang-dropdown div button {
-      color: #0077cc;
-      border: none;
-      cursor: pointer;
+    .entry li::marker {
+      color: var(--accent);
     }
 
-    .lang-dropdown button:hover {
-      opacity: 0.7;
+    .entry strong {
+      color: #202b3c;
     }
-    .lang {
-      display: flex;
-      align-items: center;
-      gap: 4px;
+
+    .tag-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
     }
-    .dropdown-content {
+
+    .tag-group {
+      padding: 15px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--soft);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .tag-group h3 {
+      margin: 0 0 5px;
+      color: #1c2738;
+      font-size: 0.88rem;
+    }
+
+    .tag-group p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 18px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--soft);
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .card__title {
+      margin: 0;
+      color: #172033;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .card__subtitle {
+      margin: 4px 0 0;
+      color: var(--accent);
+      font-size: 0.91rem;
+      font-weight: 700;
+    }
+
+    .card__text {
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .language-note {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .language-note strong {
+      color: var(--text);
+    }
+
+    .only-pt,
+    .only-en {
       display: none;
-      position: absolute;
-      top: 2.2rem;
-      left: 0;
-      background-color: white;
-      min-width: 120px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .dropdown-content div {
-      padding: 0.4rem 0.6rem;
-      cursor: pointer;
-      font-size: 0.85rem;
-      color: #333;
+    html[data-language="pt"] .only-pt,
+    html[data-language="en"] .only-en {
+      display: block;
     }
 
-    .dropdown-content div:hover {
-      background-color: #f0f0f0;
+    html[data-language="pt"] .only-pt.inline,
+    html[data-language="en"] .only-en.inline {
+      display: inline;
+    }
+
+    .screen-note {
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: -34px auto 38px;
+      color: var(--subtle);
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .toolbar__inner {
+        justify-content: stretch;
+      }
+
+      .control {
+        flex: 1;
+      }
+
+      .page-shell {
+        width: min(100% - 18px, var(--max-width));
+        margin-top: 14px;
+      }
+
+      .resume__content {
+        padding: 32px 24px 38px;
+      }
+
+      .identity {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .entry__top {
+        display: block;
+      }
+
+      .entry__date {
+        display: block;
+        margin-top: 3px;
+        white-space: normal;
+      }
+
+      .tag-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-list strong {
+        min-width: 65px;
+      }
     }
 
     @media print {
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
 
-      .download-button,
-      .lang-dropdown {
-        display: none;
+      html,
+      body {
+        background: #fff !important;
+      }
+
+      body {
+        font-size: 10.2pt;
+        line-height: 1.42;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .toolbar,
+      .screen-note {
+        display: none !important;
+      }
+
+      .page-shell {
+        width: 100%;
+        margin: 0;
+      }
+
+      .resume {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .resume__accent {
+        height: 4px;
+      }
+
+      .resume__content {
+        padding: 7mm 7mm 4mm;
+      }
+
+      .identity {
+        gap: 20px;
+        padding-bottom: 18px;
+      }
+
+      h1 {
+        font-size: 25pt;
+      }
+
+      .identity__title {
+        font-size: 11.5pt;
+      }
+
+      .contact-list li,
+      .entry__context,
+      .entry__description,
+      .entry li,
+      .tag-group p,
+      .card__text,
+      .language-note {
+        font-size: 9.3pt;
+      }
+
+      .section {
+        padding-top: 18px;
+      }
+
+      .section__heading {
+        margin-bottom: 11px;
+        font-size: 9pt;
+      }
+
+      .summary {
+        font-size: 9.8pt;
+        line-height: 1.52;
+      }
+
+      .timeline {
+        gap: 16px;
+      }
+
+      .entry {
+        padding-left: 15px;
+      }
+
+      .entry__role {
+        font-size: 10.3pt;
+      }
+
+      .entry li {
+        margin: 3px 0;
+      }
+
+      .tag-grid {
+        gap: 7px;
+      }
+
+      .tag-group,
+      .card {
+        padding: 10px 12px;
+      }
+
+      a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      .resume,
+      .section,
+      .entry,
+      .tag-group,
+      .card {
+        break-inside: avoid;
+        page-break-inside: avoid;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="cv-options">
-    <!-- Dropdown de Idioma -->
-    <div class="lang-dropdown">
-      <div class="button-root"
-        style="border:none; border-radius: 0; border-bottom: 1px solid #0077cc; gap: 8px; padding-right: 4px; padding-left: 4px;">
-        <div style="display: flex; align-items: center; gap: 4px;">
-          <i class="fas fa-globe"></i>
-          <button id="lang-selected" onclick="toggleDropdown()">
-            Idioma
-          </button>
-        </div>
-        <i class="fas fa-chevron-down"></i>
-      </div>
-      <div class="dropdown-content" id="dropdown" style="display: none;">
-        <div onclick="setLanguage('pt')" class="lang">
-          <img
-            src="https://flagcdn.com/w20/br.png"
-            srcset="https://flagcdn.com/w40/br.png 2x"
-            width="20"
-            alt="BR" 
-          /> Português</div>
-        <div onclick="setLanguage('en')" class="lang">
-          <img
-            src="https://flagcdn.com/w20/us.png"
-            srcset="https://flagcdn.com/w40/us.png 2x"
-            width="20"
-            alt="US"
-          /> English</div>
-      </div>
-    </div>
-    <div class="button-root">
-      <i class="fas fa-download"></i>
-      <button class="download-button" onclick="downloadPDF()">
-        Baixar PDF
+  <div class="toolbar" aria-label="Opções do currículo">
+    <div class="toolbar__inner">
+      <select id="language-select" class="control" aria-label="Selecionar idioma">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
+
+      <button id="print-button" class="control control--primary" type="button">
+        Baixar ou imprimir PDF
       </button>
     </div>
-
   </div>
 
-  <div id="cv-content" style="margin: auto; padding: 0.5cm;">
+  <main class="page-shell">
+    <article class="resume" id="resume">
+      <div class="resume__accent" aria-hidden="true"></div>
 
-    <!-- INÍCIO: Conteúdo em Português -->
-    <div id="cv-pt" style="display: block;">
-      <header>
-        <h1>Lucas Christian Freitas de Oliveira</h1>
-        <div class="contact-grid">
-          <div class="contact-card"><i class="fas fa-envelope"></i><a
-              href="mailto:lucas.christian.programmer@gmail.com">lucas.christian.programmer@gmail.com</a></div>
-          <div class="contact-card"><i class="fas fa-phone"></i><span>+55 (11) 94457-4999</span></div>
-          <div class="contact-card"><i class="fas fa-globe"></i><a href="https://dev-luch.com"
-              target="_blank">dev-luch.com</a></div>
-          <div class="contact-card"><i class="fab fa-linkedin"></i><a
-              href="https://www.linkedin.com/in/lucas-christian-226846245/"
-              target="_blank">linkedin.com/in/lucas-christian</a></div>
-        </div>
-      </header>
-      <section>
-        <h2>🎯 Objetivo Profissional</h2>
-        <p><strong>Desenvolvedor Fullstack</strong></p>
-      </section>
-      <section>
-        <h2>🧠 Resumo Profissional</h2>
-        <p>Sou um desenvolvedor com perfil autodidata apaixonado por resolver problemas reais utilizando tecnologia.
-          Tenho experiência em desenvolvimento frontend com foco em usabilidade, performance e acessibilidade.</p>
-      </section>
-      <section>
-        <h2>💼 Experiência Profissional</h2>
-        <p><strong>Estágio | MStore Digital</strong><br>📅 Jan/2024 a Jan/2025</p>
-        <ul>
-          <li>• Criação de interfaces dinâmicas e responsivas.</li>
-          <li>• Automatização da comunicação via mensagens e e-mails.</li>
-          <li>• Integração de sistemas de pagamento (Pix, boleto e cartão).</li>
-        </ul>
-      </section>
-      <section>
-        <h2>📌 Projetos</h2>
-        <p><strong>Freelancer | VGPlast</strong><br>📅 Nov/2024 - Resolvido em menos de 14 dias</p>
-        <ul>
-          <li>• Monitoramento ambiental em tempo real via sensores.</li>
-          <li>• Alertas automáticos em canais específicos.</li>
-          <li>• Histórico de dados para análise e controle.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>🛠️ Habilidades</h2>
-        <div style="display: flex; height: 30px; font-family: 'Orbitron', sans-serif; font-size: 0.55rem; border-radius: 4px; overflow: hidden;">
-          <div style="flex: 1; background: #444; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>E</div><small>INTRODUTÓRIO</small>
+      <div class="resume__content">
+        <header class="identity">
+          <div>
+            <p class="identity__eyebrow">Dev Luch</p>
+            <h1>Lucas Christian Freitas de Oliveira</h1>
+            <p class="identity__title">Software Developer</p>
           </div>
-          <div style="flex: 1; background: #555; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>D</div><small>INICIANTE</small>
-          </div>
-          <div style="flex: 1; background: #666; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>C</div><small>BÁSICO</small>
-          </div>
-          <div style="flex: 1; background: #777; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>B</div><small>INTERMEDIÁRIO</small>
-          </div>
-          <div style="flex: 1; background: #007bff; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>A</div><small>AVANÇADO</small>
-          </div>
-          <div style="flex: 1; background: #0044cc; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>S</div><small>ESPECIALISTA</small>
-          </div>
-          <div style="flex: 1; background: #bb2233; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>SS</div><small>MESTRE</small>
-          </div>
-          <div style="flex: 1; background: #cc1122; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>SSS</div><small>LENDA</small>
-          </div>
-          <div style="flex: 1; background: black; color: yellow; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>EX</div><small>IMENSURÁVEL</small>
-          </div>
-        </div>
-        <div class="skills">
-          <div class="skill-item">TypeScript <span class="rank">S</span></div>
-          <div class="skill-item">React.js <span class="rank">S</span></div>
-          <div class="skill-item">Git & GitHub <span class="rank">S</span></div>
-          <div class="skill-item">HTML5 & CSS3 <span class="rank">S</span></div>
-          <div class="skill-item">PostgreSQL & MongoDB <span class="rank">A</span></div>
-          <div class="skill-item">Next.js <span class="rank">A</span></div>
-          <div class="skill-item">Redux & react-query <span class="rank">A</span></div>
-          <div class="skill-item">Prisma <span class="rank">A</span></div>
-          <div class="skill-item">Figma <span class="rank">A</span></div>
-          <div class="skill-item">Jest & Cypress <span class="rank">A</span></div>
-          <div class="skill-item">Node.js <span class="rank">A</span></div>
-          <div class="skill-item">Docker <span class="rank">A</span></div>
-        </div>
-      </section>
-      <section>
-        <h2>🎓 Formação</h2>
-        <p><strong>Fatec Cotia</strong><br>Conclusão: Dez/2025</p>
-      </section>
-      <section>
-        <h2>🌍 Idiomas</h2>
-        <p>Inglês: Intermediário</p>
-      </section>
-    </div>
-    <!-- FIM: Conteúdo em Português -->
 
-    <!-- INÍCIO: Conteúdo em Inglês -->
-    <div id="cv-en" style="display: none;">
-      <header>
-        <h1>Lucas Christian Freitas de Oliveira</h1>
-        <div class="contact-grid">
-          <div class="contact-card"><i class="fas fa-envelope"></i><a
-              href="mailto:lucas.christian.programmer@gmail.com">lucas.christian.programmer@gmail.com</a></div>
-          <div class="contact-card"><i class="fas fa-phone"></i><span>+55 (11) 94457-4999</span></div>
-          <div class="contact-card"><i class="fas fa-globe"></i><a href="https://dev-luch.com"
-              target="_blank">dev-luch.com</a></div>
-          <div class="contact-card"><i class="fab fa-linkedin"></i><a
-              href="https://www.linkedin.com/in/lucas-christian-226846245/"
-              target="_blank">linkedin.com/in/lucas-christian</a></div>
-        </div>
-      </header>
-      <section>
-        <h2>🎯 Professional Objective</h2>
-        <p><strong>Fullstack Developer</strong></p>
-      </section>
-      <section>
-        <h2>🧠 Summary</h2>
-        <p>I am a self-taught developer passionate about solving real-world problems using technology. Experienced in
-          frontend development with focus on usability, performance, and accessibility.</p>
-      </section>
-      <section>
-        <h2>💼 Work Experience</h2>
-        <p><strong>Internship | MStore Digital</strong><br>📅 Jan/2024 to Jan/2025</p>
-        <ul>
-          <li>• Creation of dynamic and responsive interfaces.</li>
-          <li>• Automation of communication via messages and emails.</li>
-          <li>• Integration of payment systems (Pix, ticket and card).</li>
-        </ul>
-      </section>
-      <section>
-        <h2>📌 Projects</h2>
-        <p><strong>Freelancer | VGPlast</strong><br>📅 Nov/2024</p>
-        <ul>
-          <li>• Real-time environmental monitoring via sensors.</li>
-          <li>• Automatic alerts on specific channels.</li>
-          <li>• Data history for analysis and control.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>🛠️ Skills</h2>
-        <div style="display: flex; height: 30px; font-family: 'Orbitron', sans-serif; font-size: 0.55rem; border-radius: 4px; overflow: hidden;">
-          <div style="flex: 1; background: #444; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>E</div><small>INTRODUCTORY</small>
-          </div>
-          <div style="flex: 1; background: #555; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>D</div><small>BEGINNER</small>
-          </div>
-          <div style="flex: 1; background: #666; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>C</div><small>BASIC</small>
-          </div>
-          <div style="flex: 1; background: #777; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>B</div><small>INTERMEDIARY</small>
-          </div>
-          <div style="flex: 1; background: #007bff; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>A</div><small>ADVANCED</small>
-          </div>
-          <div style="flex: 1; background: #0044cc; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>S</div><small>SPECIALIST</small>
-          </div>
-          <div style="flex: 1; background: #bb2233; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>SS</div><small>MASTER</small>
-          </div>
-          <div style="flex: 1; background: #cc1122; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>SSS</div><small>LEGEND</small>
-          </div>
-          <div style="flex: 1; background: black; color: yellow; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <div>EX</div><small>IMMEASURABLE</small>
-          </div>
-        </div>
-        <div class="skills">
-          <div class="skill-item">TypeScript <span class="rank">S</span></div>
-          <div class="skill-item">React.js <span class="rank">S</span></div>
-          <div class="skill-item">Git & GitHub <span class="rank">S</span></div>
-          <div class="skill-item">HTML5 & CSS3 <span class="rank">S</span></div>
-          <div class="skill-item">PostgreSQL & MongoDB <span class="rank">S</span></div>
-          <div class="skill-item">Next.js <span class="rank">A</span></div>
-          <div class="skill-item">Redux & react-query <span class="rank">A</span></div>
-          <div class="skill-item">Prisma <span class="rank">A</span></div>
-          <div class="skill-item">Figma <span class="rank">A</span></div>
-          <div class="skill-item">Jest & Cypress <span class="rank">A</span></div>
-          <div class="skill-item">Node.js <span class="rank">A</span></div>
-          <div class="skill-item">Docker <span class="rank">A</span></div>
-        </div>
-      </section>
-      <section>
-        <h2>🎓 Education</h2>
-        <p><strong>Fatec Cotia</strong><br>Expected graduation: Dec/2025</p>
-      </section>
-      <section>
-        <h2>🌍 Languages</h2>
-        <p>English: Intermediate</p>
-      </section>
-    </div>
-    <!-- FIM: Conteúdo em Inglês -->
+          <ul class="contact-list" aria-label="Informações de contato">
+            <li>
+              <strong>E-mail</strong>
+              <a href="mailto:lucas.christian.programmer@gmail.com">
+                lucas.christian.programmer@gmail.com
+              </a>
+            </li>
+            <li>
+              <strong>Telefone</strong>
+              <a href="tel:+5511944574999">+55 (11) 94457-4999</a>
+            </li>
+            <li>
+              <strong>Site</strong>
+              <a href="https://dev-luch.com" target="_blank" rel="noreferrer">
+                dev-luch.com
+              </a>
+            </li>
+            <li>
+              <strong>GitHub</strong>
+              <a href="https://github.com/dev-luch" target="_blank" rel="noreferrer">
+                github.com/dev-luch
+              </a>
+            </li>
+            <li>
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/dev-luch" target="_blank" rel="noreferrer">
+                linkedin.com/in/dev-luch
+              </a>
+            </li>
+          </ul>
+        </header>
 
-  </div>
+        <div class="only-pt">
+          <section class="section" aria-labelledby="resumo-pt">
+            <h2 class="section__heading" id="resumo-pt">Resumo profissional</h2>
+            <p class="summary">
+              Desenvolvedor de Software com experiência no desenvolvimento e na entrega de produtos digitais completos.
+              Atuo com backend, APIs, integrações, frontend, bancos de dados, infraestrutura e publicação de
+              aplicações, participando desde a análise do produto e das decisões técnicas até a implementação,
+              manutenção e evolução em produção. Na Soublox, trabalho diretamente no desenvolvimento do
+              chatt2.me e do APIs2.me, sendo responsável pela maior parte de suas implementações e colaborando
+              com outros integrantes da equipe nos processos de deploy e publicação.
+            </p>
+          </section>
+
+          <section class="section" aria-labelledby="experiencia-pt">
+            <h2 class="section__heading" id="experiencia-pt">Experiência profissional</h2>
+
+            <div class="timeline">
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Software Developer <span class="entry__company">• Soublox</span>
+                  </h3>
+                  <span class="entry__date">[MÊS/ANO DE INÍCIO] – Atual</span>
+                </div>
+                <p class="entry__context">Desenvolvimento full stack de produtos digitais</p>
+                <p class="entry__description">
+                  Atuação no desenvolvimento e na evolução de produtos da Soublox, participando de decisões
+                  técnicas, implementação, integrações, manutenção e entrega em produção.
+                </p>
+                <ul>
+                  <li>
+                    <strong>chatt2.me:</strong> responsável pela maior parte da implementação do produto,
+                    com atuação em frontend, backend, APIs, integrações e evolução da plataforma.
+                  </li>
+                  <li>
+                    <strong>APIs2.me:</strong> responsável pela maior parte da implementação do backend e
+                    das APIs do produto.
+                  </li>
+                  <li>
+                    Colaboração com outros integrantes da equipe nos processos de deploy, publicação e
+                    operação dos sistemas.
+                  </li>
+                  <li>
+                    Desenvolvimento de soluções considerando segurança, desempenho, manutenibilidade,
+                    qualidade de código e necessidades reais do produto.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Estagiário de Desenvolvimento de Software
+                    <span class="entry__company">• MStore Digital</span>
+                  </h3>
+                  <span class="entry__date">Jan/2024 – Jan/2025</span>
+                </div>
+                <p class="entry__context">Desenvolvimento frontend e backend</p>
+                <ul>
+                  <li>Desenvolvimento e manutenção de funcionalidades de frontend e backend.</li>
+                  <li>Criação de interfaces dinâmicas e responsivas.</li>
+                  <li>Automação de comunicação por mensagens e e-mails.</li>
+                  <li>Integração com meios de pagamento, incluindo Pix, boleto e cartão.</li>
+                  <li>
+                    Participação na implementação, correção, validação e evolução das entregas junto à equipe.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="projetos-pt">
+            <h2 class="section__heading" id="projetos-pt">Projetos e iniciativas independentes</h2>
+
+            <div class="timeline">
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Criador e Desenvolvedor de Software
+                    <span class="entry__company">• Phoxia</span>
+                  </h3>
+                  <span class="entry__date">2026 – Atual</span>
+                </div>
+                <p class="entry__context">Iniciativa independente em desenvolvimento</p>
+                <p class="entry__description">
+                  Desenvolvimento de um ecossistema independente de produtos e infraestrutura de software,
+                  com atuação em definição de produto, arquitetura, backend, frontend, segurança,
+                  infraestrutura, observabilidade, deploy e operação técnica.
+                </p>
+                <ul>
+                  <li>Construção dos primeiros produtos públicos e de sua infraestrutura compartilhada.</li>
+                  <li>
+                    Responsabilidade end-to-end pelas decisões técnicas e pela implementação inicial do ecossistema.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Desenvolvedor Freelancer
+                    <span class="entry__company">• VGPlast</span>
+                  </h3>
+                  <span class="entry__date">Nov/2024</span>
+                </div>
+                <p class="entry__context">Solução entregue em menos de duas semanas</p>
+                <ul>
+                  <li>Desenvolvimento de uma solução de monitoramento ambiental em tempo real.</li>
+                  <li>Recebimento e visualização de dados coletados por sensores.</li>
+                  <li>Envio automatizado de alertas para canais definidos.</li>
+                  <li>Armazenamento de histórico para análise e acompanhamento.</li>
+                </ul>
+              </article>
+
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Projeto Integrador Multiplataforma
+                    <span class="entry__company">• Fatec Cotia</span>
+                  </h3>
+                  <span class="entry__date">Graduação</span>
+                </div>
+                <p class="entry__context">Aplicações backend, web e mobile</p>
+                <ul>
+                  <li>
+                    Contribuição direta com código em diferentes componentes desde as primeiras etapas do projeto.
+                  </li>
+                  <li>Participação na integração entre as aplicações backend, web e mobile.</li>
+                  <li>
+                    Apoio a decisões técnicas, validação das integrações e atividades relacionadas à publicação.
+                  </li>
+                  <li>
+                    Colaboração na organização das entregas e na resolução de problemas técnicos.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="competencias-pt">
+            <h2 class="section__heading" id="competencias-pt">Competências técnicas</h2>
+
+            <div class="tag-grid">
+              <article class="tag-group">
+                <h3>Backend e APIs</h3>
+                <p>TypeScript, Node.js, NestJS, APIs REST, PostgreSQL, Prisma, Redis e BullMQ.</p>
+              </article>
+
+              <article class="tag-group">
+                <h3>Frontend</h3>
+                <p>React, Next.js, Svelte, HTML, CSS, interfaces responsivas e acessibilidade.</p>
+              </article>
+
+              <article class="tag-group">
+                <h3>Infraestrutura e cloud</h3>
+                <p>Docker, AWS, Cloudflare, S3, SES, Git, GitHub e CI/CD.</p>
+              </article>
+
+              <article class="tag-group">
+                <h3>Engenharia de software</h3>
+                <p>
+                  Integrações, autenticação, autorização, bancos de dados, filas, testes, automação,
+                  segurança e publicação de aplicações.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="formacao-pt">
+            <h2 class="section__heading" id="formacao-pt">Formação e reconhecimento</h2>
+
+            <div class="education-grid">
+              <article class="card">
+                <h3 class="card__title">Tecnologia em Desenvolvimento de Software Multiplataforma</h3>
+                <p class="card__subtitle">Fatec Cotia • Concluído em dezembro de 2025</p>
+                <p class="card__text">
+                  Formação voltada ao desenvolvimento de soluções web, backend e mobile, integração de sistemas,
+                  bancos de dados e entrega de software multiplataforma.
+                </p>
+              </article>
+
+              <article class="card">
+                <h3 class="card__title">Melhor aluno do curso</h3>
+                <p class="card__subtitle">Reconhecimento acadêmico</p>
+                <p class="card__text">
+                  Reconhecido como o melhor aluno do curso de Desenvolvimento de Software Multiplataforma.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="idiomas-pt">
+            <h2 class="section__heading" id="idiomas-pt">Idiomas</h2>
+            <p class="language-note"><strong>Português:</strong> nativo · <strong>Inglês:</strong> intermediário</p>
+          </section>
+        </div>
+
+        <div class="only-en">
+          <section class="section" aria-labelledby="summary-en">
+            <h2 class="section__heading" id="summary-en">Professional summary</h2>
+            <p class="summary">
+              Software Developer experienced in developing and delivering complete digital products.
+              I work across backend systems, APIs, integrations, frontend applications, databases,
+              infrastructure, and production delivery, contributing from product analysis and technical
+              decisions to implementation, maintenance, and continuous evolution. At Soublox, I work
+              directly on chatt2.me and APIs2.me, taking responsibility for most of their implementation
+              while collaborating with other team members on deployment and production delivery.
+            </p>
+          </section>
+
+          <section class="section" aria-labelledby="experience-en">
+            <h2 class="section__heading" id="experience-en">Professional experience</h2>
+
+            <div class="timeline">
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Software Developer <span class="entry__company">• Soublox</span>
+                  </h3>
+                  <span class="entry__date">[START MONTH/YEAR] – Present</span>
+                </div>
+                <p class="entry__context">Full-stack digital product development</p>
+                <p class="entry__description">
+                  Working on the development and continuous evolution of Soublox products, contributing
+                  to technical decisions, implementation, integrations, maintenance, and production delivery.
+                </p>
+                <ul>
+                  <li>
+                    <strong>chatt2.me:</strong> responsible for most of the product implementation,
+                    working across frontend, backend, APIs, integrations, and platform evolution.
+                  </li>
+                  <li>
+                    <strong>APIs2.me:</strong> responsible for most of the backend and API implementation.
+                  </li>
+                  <li>
+                    Collaborated with other team members on deployment, publishing, and production operations.
+                  </li>
+                  <li>
+                    Developed solutions with attention to security, performance, maintainability,
+                    code quality, and real product requirements.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Software Development Intern
+                    <span class="entry__company">• MStore Digital</span>
+                  </h3>
+                  <span class="entry__date">Jan 2024 – Jan 2025</span>
+                </div>
+                <p class="entry__context">Frontend and backend development</p>
+                <ul>
+                  <li>Developed and maintained frontend and backend features.</li>
+                  <li>Created dynamic and responsive user interfaces.</li>
+                  <li>Automated communication through messages and emails.</li>
+                  <li>Integrated payment methods including Pix, bank slips, and cards.</li>
+                  <li>
+                    Contributed to implementation, troubleshooting, validation, and continuous delivery improvements.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="projects-en">
+            <h2 class="section__heading" id="projects-en">Independent projects and initiatives</h2>
+
+            <div class="timeline">
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Creator and Software Developer
+                    <span class="entry__company">• Phoxia</span>
+                  </h3>
+                  <span class="entry__date">2026 – Present</span>
+                </div>
+                <p class="entry__context">Independent initiative under development</p>
+                <p class="entry__description">
+                  Building an independent software product and infrastructure ecosystem, working across
+                  product definition, architecture, backend, frontend, security, infrastructure,
+                  observability, deployment, and technical operations.
+                </p>
+                <ul>
+                  <li>Building the first public products and their shared infrastructure.</li>
+                  <li>
+                    Taking end-to-end responsibility for technical decisions and the ecosystem's initial implementation.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Freelance Software Developer
+                    <span class="entry__company">• VGPlast</span>
+                  </h3>
+                  <span class="entry__date">Nov 2024</span>
+                </div>
+                <p class="entry__context">Solution delivered in under two weeks</p>
+                <ul>
+                  <li>Developed a real-time environmental monitoring solution.</li>
+                  <li>Received and displayed data collected from sensors.</li>
+                  <li>Sent automated alerts to configured communication channels.</li>
+                  <li>Stored historical data for analysis and operational follow-up.</li>
+                </ul>
+              </article>
+
+              <article class="entry">
+                <div class="entry__top">
+                  <h3 class="entry__role">
+                    Multiplatform Capstone Project
+                    <span class="entry__company">• Fatec Cotia</span>
+                  </h3>
+                  <span class="entry__date">Undergraduate program</span>
+                </div>
+                <p class="entry__context">Backend, web, and mobile applications</p>
+                <ul>
+                  <li>
+                    Contributed code across different components from the early stages of development.
+                  </li>
+                  <li>Participated in integration across backend, web, and mobile applications.</li>
+                  <li>
+                    Supported technical decisions, integration validation, and deployment-related activities.
+                  </li>
+                  <li>
+                    Collaborated on delivery coordination and technical problem-solving.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="skills-en">
+            <h2 class="section__heading" id="skills-en">Technical skills</h2>
+
+            <div class="tag-grid">
+              <article class="tag-group">
+                <h3>Backend and APIs</h3>
+                <p>TypeScript, Node.js, NestJS, REST APIs, PostgreSQL, Prisma, Redis, and BullMQ.</p>
+              </article>
+
+              <article class="tag-group">
+                <h3>Frontend</h3>
+                <p>React, Next.js, Svelte, HTML, CSS, responsive interfaces, and accessibility.</p>
+              </article>
+
+              <article class="tag-group">
+                <h3>Infrastructure and cloud</h3>
+                <p>Docker, AWS, Cloudflare, S3, SES, Git, GitHub, and CI/CD.</p>
+              </article>
+
+              <article class="tag-group">
+                <h3>Software engineering</h3>
+                <p>
+                  Integrations, authentication, authorization, databases, queues, testing, automation,
+                  security, and production delivery.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="education-en">
+            <h2 class="section__heading" id="education-en">Education and recognition</h2>
+
+            <div class="education-grid">
+              <article class="card">
+                <h3 class="card__title">Technology Degree in Multiplatform Software Development</h3>
+                <p class="card__subtitle">Fatec Cotia • Completed in December 2025</p>
+                <p class="card__text">
+                  Program focused on web, backend, and mobile development, system integration,
+                  databases, and multiplatform software delivery.
+                </p>
+              </article>
+
+              <article class="card">
+                <h3 class="card__title">Top-performing student</h3>
+                <p class="card__subtitle">Academic recognition</p>
+                <p class="card__text">
+                  Recognized as the top-performing student in the Multiplatform Software Development program.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="languages-en">
+            <h2 class="section__heading" id="languages-en">Languages</h2>
+            <p class="language-note"><strong>Portuguese:</strong> native · <strong>English:</strong> intermediate</p>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <p class="screen-note">
+    A opção de PDF utiliza a impressão nativa do navegador para preservar texto selecionável e compatibilidade com sistemas de recrutamento.
+  </p>
 
   <script>
-    let currentLang = 'pt';
-
-    function toggleDropdown() {
-      const dropdown = document.getElementById("dropdown");
-      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-    }
-
-    window.onclick = function (event) {
-      if (!event.target.matches('#lang-selected')) {
-        document.getElementById("dropdown").style.display = "none";
+    const translations = {
+      pt: {
+        lang: "pt-BR",
+        title: "Lucas Christian • Software Developer",
+        description:
+          "Currículo de Lucas Christian, Software Developer com experiência em backend, APIs, integrações, frontend, infraestrutura e entrega de produtos digitais.",
+        socialDescription:
+          "Desenvolvedor de Software com experiência no desenvolvimento e na entrega de produtos digitais completos.",
+        printLabel: "Baixar ou imprimir PDF"
+      },
+      en: {
+        lang: "en-US",
+        title: "Lucas Christian • Software Developer",
+        description:
+          "Resume of Lucas Christian, a Software Developer experienced in backend systems, APIs, integrations, frontend applications, infrastructure, and digital product delivery.",
+        socialDescription:
+          "Software Developer experienced in developing and delivering complete digital products.",
+        printLabel: "Download or print PDF"
       }
     };
 
-    function updateMetaTags(lang) {
-      const metaTitle = document.getElementById("meta-title");
-      const metaDescription = document.getElementById("meta-description");
-      const ogTitle = document.getElementById("og-title");
-      const ogDescription = document.getElementById("og-description");
-      const twitterTitle = document.getElementById("twitter-title");
-      const twitterDescription = document.getElementById("twitter-description");
-    
-      if (lang === "pt") {
-        document.documentElement.lang = "pt-BR";
-        metaTitle.textContent = "Currículo - Lucas Christian";
-        metaDescription.setAttribute("content", "Currículo interativo e responsivo de Lucas Christian, Desenvolvedor Frontend com experiência em React, TypeScript, Node.js e mais.");
-        ogTitle.setAttribute("content", "Currículo - Lucas Christian");
-        ogDescription.setAttribute("content", "Currículo interativo de Lucas Christian, Desenvolvedor Frontend com foco em performance e acessibilidade.");
-        twitterTitle.setAttribute("content", "Currículo - Lucas Christian");
-        twitterDescription.setAttribute("content", "Currículo interativo de Lucas Christian, Desenvolvedor Frontend com foco em performance e acessibilidade.");
-      } else {
-        document.documentElement.lang = "en-US";
-        metaTitle.textContent = "Resume - Lucas Christian";
-        metaDescription.setAttribute("content", "Interactive and responsive resume of Lucas Christian, Frontend Developer experienced in React, TypeScript, Node.js and more.");
-        ogTitle.setAttribute("content", "Resume - Lucas Christian");
-        ogDescription.setAttribute("content", "Interactive resume of Lucas Christian, Frontend Developer focused on performance and accessibility.");
-        twitterTitle.setAttribute("content", "Resume - Lucas Christian");
-        twitterDescription.setAttribute("content", "Interactive resume of Lucas Christian, Frontend Developer focused on performance and accessibility.");
+    const languageSelect = document.getElementById("language-select");
+    const printButton = document.getElementById("print-button");
+
+    function setLanguage(language) {
+      const selected = translations[language] ? language : "pt";
+      const content = translations[selected];
+
+      document.documentElement.dataset.language = selected;
+      document.documentElement.lang = content.lang;
+      document.title = content.title;
+
+      document.getElementById("meta-title").textContent = content.title;
+      document.getElementById("meta-description").setAttribute("content", content.description);
+      document.getElementById("og-title").setAttribute("content", content.title);
+      document.getElementById("og-description").setAttribute("content", content.socialDescription);
+      document.getElementById("twitter-title").setAttribute("content", content.title);
+      document.getElementById("twitter-description").setAttribute("content", content.socialDescription);
+
+      printButton.textContent = content.printLabel;
+      languageSelect.value = selected;
+
+      try {
+        localStorage.setItem("cv-language", selected);
+      } catch {
+        // O currículo continua funcionando mesmo quando o armazenamento local está indisponível.
       }
     }
 
-    function setLanguage(lang) {
-      const pt = document.getElementById('cv-pt');
-      const en = document.getElementById('cv-en');
-      const downloadBtn = document.querySelector('.download-button');
-      const langLabel = document.getElementById('lang-selected');
-
-      if (lang === 'pt') {
-        pt.style.display = 'block';
-        en.style.display = 'none';
-        downloadBtn.innerText = 'Baixar PDF';
-        langLabel.innerText = 'Idioma';
-      } else {
-        pt.style.display = 'none';
-        en.style.display = 'block';
-        downloadBtn.innerText = 'Download PDF';
-        langLabel.innerText = 'Language';
+    function getInitialLanguage() {
+      try {
+        const savedLanguage = localStorage.getItem("cv-language");
+        if (savedLanguage === "pt" || savedLanguage === "en") {
+          return savedLanguage;
+        }
+      } catch {
+        // Ignora restrições de armazenamento.
       }
 
-      currentLang = lang;
-      updateMetaTags(lang);
+      return navigator.language.toLowerCase().startsWith("pt") ? "pt" : "en";
     }
 
-    function downloadPDF() {
-      const element = document.getElementById('cv-content');
+    languageSelect.addEventListener("change", (event) => {
+      setLanguage(event.target.value);
+    });
 
-      const opt = {
-        margin: 0,
-        filename: currentLang === 'pt'
-          ? 'curriculo-lucas-christian.pdf'
-          : 'resume-lucas-christian.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { avoid: ['section', 'header'] }
-      };
+    printButton.addEventListener("click", () => {
+      window.print();
+    });
 
-      html2pdf().set(opt).from(element).save();
-    }
-
-    // Define o idioma padrão na primeira carga
-    window.onload = () => setLanguage(currentLang);
+    setLanguage(getInitialLanguage());
   </script>
 </body>
-
 </html>
