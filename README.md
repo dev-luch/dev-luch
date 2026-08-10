@@ -1,6 +1,6 @@
 # Lucas Christian
 
-**Software Engineer at Soublox, building backend systems, APIs, integrations, product platforms, and developer tools.**
+**Software Developer at Soublox, building backend systems, APIs, integrations, product platforms, and developer tools.**
 
 I work across the complete software lifecycle, from product analysis and technical decisions to implementation, deployment, and production evolution.
 
