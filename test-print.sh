@@ -11,7 +11,6 @@ for language in pt en; do
     --headless \
     --disable-gpu \
     --no-sandbox \
-    --no-pdf-header-footer \
     --print-to-pdf="$cv_test_dir/$language.pdf" \
     "file://$cv_test_dir/$language.html" >/dev/null 2>&1
 
@@ -22,9 +21,14 @@ for language in pt en; do
   fi
 
   pdftotext "$cv_test_dir/$language.pdf" "$cv_test_dir/$language.txt"
+
+  if grep -Eq 'file://|Lucas Christian • Software Developer|[[:space:]][0-9]+/[0-9]+[[:space:]]*$' "$cv_test_dir/$language.txt"; then
+    echo "$language: cabeçalho ou rodapé do navegador encontrado no PDF" >&2
+    exit 1
+  fi
 done
 
 grep -Fq "Set/2025 – Atual" "$cv_test_dir/pt.txt"
 grep -Fq "Sep 2025 – Present" "$cv_test_dir/en.txt"
 
-echo "PDF PT/EN: 1 página e datas corretas"
+echo "PDF PT/EN: 1 página, datas corretas e sem cabeçalhos ou rodapés"
