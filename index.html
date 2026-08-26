@@ -8,9 +8,8 @@
     CURRÍCULO DE LUCAS CHRISTIAN
 
     Antes de publicar:
-    1. Procure por [MÊS/ANO DE INÍCIO] e informe a data de entrada na Soublox.
-    2. Revise o nível de inglês caso queira usar outra classificação.
-    3. Confirme se todas as tecnologias listadas em Competências refletem sua experiência atual.
+    1. Revise o nível de inglês caso queira usar outra classificação.
+    2. Confirme se todas as tecnologias listadas em Competências refletem sua experiência atual.
   -->
 
   <title id="meta-title">Lucas Christian • Software Developer</title>
@@ -332,7 +331,7 @@
       content: "";
       position: absolute;
       top: 8px;
-      left: -6px;
+      left: -7px;
       width: 10px;
       height: 10px;
       border: 2px solid var(--page);
@@ -538,7 +537,7 @@
     @media print {
       @page {
         size: A4;
-        margin: 12mm;
+        margin: 9mm;
       }
 
       html,
@@ -547,8 +546,8 @@
       }
 
       body {
-        font-size: 10.2pt;
-        line-height: 1.42;
+        font-size: 9pt;
+        line-height: 1.32;
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
       }
@@ -570,24 +569,40 @@
       }
 
       .resume__accent {
-        height: 4px;
+        height: 3px;
       }
 
       .resume__content {
-        padding: 7mm 7mm 4mm;
+        padding: 4mm 5mm 2mm;
       }
 
       .identity {
-        gap: 20px;
-        padding-bottom: 18px;
+        grid-template-columns: minmax(0, 1.25fr) minmax(235px, 0.75fr);
+        gap: 6mm;
+        padding-bottom: 3mm;
       }
 
       h1 {
-        font-size: 25pt;
+        font-size: 21pt;
       }
 
       .identity__title {
-        font-size: 11.5pt;
+        margin-top: 5px;
+        font-size: 10pt;
+      }
+
+      .identity__eyebrow {
+        margin-bottom: 3px;
+        font-size: 7pt;
+      }
+
+      .contact-list {
+        gap: 2px;
+      }
+
+      .contact-list strong {
+        min-width: 57px;
+        font-size: 6.8pt;
       }
 
       .contact-list li,
@@ -597,46 +612,96 @@
       .tag-group p,
       .card__text,
       .language-note {
-        font-size: 9.3pt;
+        font-size: 8.3pt;
       }
 
       .section {
-        padding-top: 18px;
+        padding-top: 3.4mm;
       }
 
       .section__heading {
-        margin-bottom: 11px;
-        font-size: 9pt;
+        gap: 7px;
+        margin-bottom: 1.8mm;
+        font-size: 8pt;
       }
 
       .summary {
-        font-size: 9.8pt;
-        line-height: 1.52;
+        font-size: 8.8pt;
+        line-height: 1.35;
       }
 
       .timeline {
-        gap: 16px;
+        gap: 3mm;
       }
 
       .entry {
-        padding-left: 15px;
+        padding-left: 3.5mm;
+      }
+
+      .entry__top {
+        display: flex;
+        gap: 10px;
       }
 
       .entry__role {
-        font-size: 10.3pt;
+        font-size: 9pt;
+      }
+
+      .entry__date {
+        display: inline;
+        margin-top: 0;
+        font-size: 7.8pt;
+        white-space: nowrap;
+      }
+
+      .entry__context {
+        margin: 1px 0 3px;
+      }
+
+      .entry__description {
+        margin-bottom: 3px;
       }
 
       .entry li {
-        margin: 3px 0;
+        margin: 1px 0;
+      }
+
+      .projects .timeline {
+        gap: 1.5mm;
+      }
+
+      .projects .entry__description,
+      .projects .entry ul {
+        display: none;
       }
 
       .tag-grid {
-        gap: 7px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5mm;
+      }
+
+      .education-grid {
+        grid-template-columns: 1.35fr 0.65fr;
+        gap: 1.5mm;
       }
 
       .tag-group,
       .card {
-        padding: 10px 12px;
+        padding: 1.5mm 2mm;
+      }
+
+      .tag-group h3,
+      .card__title {
+        font-size: 8.4pt;
+      }
+
+      .card__subtitle {
+        margin-top: 1px;
+        font-size: 8pt;
+      }
+
+      .card__text {
+        margin-top: 3px;
       }
 
       a {
@@ -645,7 +710,6 @@
       }
 
       .resume,
-      .section,
       .entry,
       .tag-group,
       .card {
@@ -718,12 +782,10 @@
           <section class="section" aria-labelledby="resumo-pt">
             <h2 class="section__heading" id="resumo-pt">Resumo profissional</h2>
             <p class="summary">
-              Desenvolvedor de Software com experiência no desenvolvimento e na entrega de produtos digitais completos.
-              Atuo com backend, APIs, integrações, frontend, bancos de dados, infraestrutura e publicação de
-              aplicações, participando desde a análise do produto e das decisões técnicas até a implementação,
-              manutenção e evolução em produção. Na Soublox, trabalho diretamente no desenvolvimento do
-              chatt2.me e do APIs2.me, sendo responsável pela maior parte de suas implementações e colaborando
-              com outros integrantes da equipe nos processos de deploy e publicação.
+              Desenvolvedor de Software full stack com experiência em backend, APIs, integrações, frontend,
+              bancos de dados e infraestrutura. Na Soublox, sou responsável pela maior parte da implementação
+              do chatt2.me e do backend e das APIs do APIs2.me. Assumo problemas do produto do início à produção:
+              entendo a necessidade, implemento, publico e acompanho o resultado.
             </p>
           </section>
 
@@ -736,13 +798,9 @@
                   <h3 class="entry__role">
                     Software Developer <span class="entry__company">• Soublox</span>
                   </h3>
-                  <span class="entry__date">[MÊS/ANO DE INÍCIO] – Atual</span>
+                  <span class="entry__date">Set/2025 – Atual</span>
                 </div>
                 <p class="entry__context">Desenvolvimento full stack de produtos digitais</p>
-                <p class="entry__description">
-                  Atuação no desenvolvimento e na evolução de produtos da Soublox, participando de decisões
-                  técnicas, implementação, integrações, manutenção e entrega em produção.
-                </p>
                 <ul>
                   <li>
                     <strong>chatt2.me:</strong> responsável pela maior parte da implementação do produto,
@@ -753,12 +811,8 @@
                     das APIs do produto.
                   </li>
                   <li>
-                    Colaboração com outros integrantes da equipe nos processos de deploy, publicação e
-                    operação dos sistemas.
-                  </li>
-                  <li>
-                    Desenvolvimento de soluções considerando segurança, desempenho, manutenibilidade,
-                    qualidade de código e necessidades reais do produto.
+                    Participação em decisões técnicas, integrações, manutenção, deploy e operação em produção,
+                    colaborando com a equipe na entrega dos sistemas.
                   </li>
                 </ul>
               </article>
@@ -773,19 +827,17 @@
                 </div>
                 <p class="entry__context">Desenvolvimento frontend e backend</p>
                 <ul>
-                  <li>Desenvolvimento e manutenção de funcionalidades de frontend e backend.</li>
-                  <li>Criação de interfaces dinâmicas e responsivas.</li>
-                  <li>Automação de comunicação por mensagens e e-mails.</li>
-                  <li>Integração com meios de pagamento, incluindo Pix, boleto e cartão.</li>
+                  <li>Desenvolvimento de funcionalidades de frontend e backend e de interfaces responsivas.</li>
+                  <li>Automação de mensagens e e-mails e integração com Pix, boleto e cartão.</li>
                   <li>
-                    Participação na implementação, correção, validação e evolução das entregas junto à equipe.
+                    Participação na implementação, correção, validação e publicação das entregas junto à equipe.
                   </li>
                 </ul>
               </article>
             </div>
           </section>
 
-          <section class="section" aria-labelledby="projetos-pt">
+          <section class="section projects" aria-labelledby="projetos-pt">
             <h2 class="section__heading" id="projetos-pt">Projetos e iniciativas independentes</h2>
 
             <div class="timeline">
@@ -915,12 +967,10 @@
           <section class="section" aria-labelledby="summary-en">
             <h2 class="section__heading" id="summary-en">Professional summary</h2>
             <p class="summary">
-              Software Developer experienced in developing and delivering complete digital products.
-              I work across backend systems, APIs, integrations, frontend applications, databases,
-              infrastructure, and production delivery, contributing from product analysis and technical
-              decisions to implementation, maintenance, and continuous evolution. At Soublox, I work
-              directly on chatt2.me and APIs2.me, taking responsibility for most of their implementation
-              while collaborating with other team members on deployment and production delivery.
+              Full-stack Software Developer experienced in backend systems, APIs, integrations, frontend,
+              databases, and infrastructure. At Soublox, I am responsible for most of the chatt2.me
+              implementation and the APIs2.me backend and APIs. I take product problems from discovery to
+              production: understanding the need, implementing, shipping, and following up on the result.
             </p>
           </section>
 
@@ -933,13 +983,9 @@
                   <h3 class="entry__role">
                     Software Developer <span class="entry__company">• Soublox</span>
                   </h3>
-                  <span class="entry__date">[START MONTH/YEAR] – Present</span>
+                  <span class="entry__date">Sep 2025 – Present</span>
                 </div>
                 <p class="entry__context">Full-stack digital product development</p>
-                <p class="entry__description">
-                  Working on the development and continuous evolution of Soublox products, contributing
-                  to technical decisions, implementation, integrations, maintenance, and production delivery.
-                </p>
                 <ul>
                   <li>
                     <strong>chatt2.me:</strong> responsible for most of the product implementation,
@@ -949,11 +995,8 @@
                     <strong>APIs2.me:</strong> responsible for most of the backend and API implementation.
                   </li>
                   <li>
-                    Collaborated with other team members on deployment, publishing, and production operations.
-                  </li>
-                  <li>
-                    Developed solutions with attention to security, performance, maintainability,
-                    code quality, and real product requirements.
+                    Contribute to technical decisions, integrations, maintenance, deployment, and production
+                    operations while collaborating with the team on system delivery.
                   </li>
                 </ul>
               </article>
@@ -968,19 +1011,17 @@
                 </div>
                 <p class="entry__context">Frontend and backend development</p>
                 <ul>
-                  <li>Developed and maintained frontend and backend features.</li>
-                  <li>Created dynamic and responsive user interfaces.</li>
-                  <li>Automated communication through messages and emails.</li>
-                  <li>Integrated payment methods including Pix, bank slips, and cards.</li>
+                  <li>Developed frontend and backend features and responsive interfaces.</li>
+                  <li>Automated messages and emails and integrated Pix, bank slips, and cards.</li>
                   <li>
-                    Contributed to implementation, troubleshooting, validation, and continuous delivery improvements.
+                    Contributed to implementation, troubleshooting, validation, and production releases.
                   </li>
                 </ul>
               </article>
             </div>
           </section>
 
-          <section class="section" aria-labelledby="projects-en">
+          <section class="section projects" aria-labelledby="projects-en">
             <h2 class="section__heading" id="projects-en">Independent projects and initiatives</h2>
 
             <div class="timeline">
